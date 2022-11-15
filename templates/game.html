@@ -2,34 +2,47 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
+    <title>Madlibs</title>
 </head>
 
 <body>
     <form action="/madlib">
-        <div> Please enter name of person:
-            <input type="text" name="person">
-        </div>
-        <div> Please choose a color
+        <div>Please enter a person <input type="text" name="person" /></div>
+        <div>
+            Please choose a color
             <select name="color">
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
                 <option value="green">Green</option>
+                <option value="orange">Orange</option>
                 <option value="yellow">Yellow</option>
             </select>
         </div>
-        <div>Please choose an adjective:
-            <input type="text" name="adjective">
-        </div>
-        <div>Please choose a noun:
-            <input type="text" name="noun">
+        <div>Please enter three nouns, separated by spaces <input type="text" name="nouns" /></div>
+        <div>
+            <div>
+                Please enter a past tense verb <input type="text" name="past_verb" /></div>
         </div>
         <div>
-            <input type="submit">
+            Please enter a present tense verb <input type="text" name="present_verb" /></div>
         </div>
+        <div>
+            Please enter an adverb <input type="text" name="adverb" /></div>
+        </div>
+        Please choose three adjectives:
+        <input type="checkbox" name="adjectives" id="spicy" value="spicy" />
+        <label for="spicy">Spicy</label>
+        <input type="checkbox" name="adjectives" id="bouncy" value="bouncy" />
+        <label for="bouncy">Bouncy</label>
+        <input type="checkbox" name="adjectives" id="scruffy" value="scruffy" />
+        <label for="scruffy">Scruffy</label>
+        <input type="checkbox" name="adjectives" id="fancy" value="fancy" />
+        <label for="fancy">Fancy</label>
+        <input type="checkbox" name="adjectives" id="racy" value="racy" />
+        <label for="racy">Racy</label>
+        </div>
+        <div><input type="submit" /></div>
     </form>
-
-
 </body>
 
 </html>
